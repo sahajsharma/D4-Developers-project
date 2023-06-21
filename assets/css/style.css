@@ -1,0 +1,296 @@
+/*
+* Designed and Developed by: (https://enally.in) and The TEAM.
+
+* NOTE 1: Do not make changes directly on style.css file otherwise we may charge extra for maintainance in future.
+* NOTE 2: Comment and Write all the changes on changes.md file. 
+* NOTE 3 Important: We will only assist 1 week for free but NOTE 1 and NOTE 2 should not be violated.
+
+* Code Instructions
+* 1. Main codes are on - _main.scss
+* 2. Responsive codes are on - _responsive.scss
+* 3. Color, Fonts and other variables are inside - _components.scss
+* 4. Globles Codes such as buttons, shadow, main-head, sub-heading and etc are inside - _globle.scss
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+/* Primary Colors */
+/* Font Size */
+/* Font Weight */
+/* </---------Variables---------> */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+.shadow-1 {
+  box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+  -webkit-box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+  -moz-box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+}
+
+.shadow-2 {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.shadow-2:hover {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  transition-delay: 1ms;
+  transition: 0.4s;
+}
+
+.shadow-3 {
+  box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-4 {
+  box-shadow: -19px 15px 43px 6px rgba(0, 0, 0, 0.279);
+}
+
+.shadow-5 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.shadow-6 {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.shadow-7 {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+button {
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px 22px;
+  background-color: #0D6EFD;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  transition-delay: 1ms;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: none;
+  transition: 0.3s;
+  transition-delay: 1ms;
+}
+
+.text-deco-none {
+  text-decoration: none;
+}
+
+.uppercase {
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+}
+
+/* Primary Colors */
+/* Font Size */
+/* Font Weight */
+/* </---------Variables---------> */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-animation-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+  -webkit-animation-iteration-count: 1 !important;
+          animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+* {
+  margin: 0;
+}
+
+.d4developer_Name {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+.d4developer_Name span {
+  font-weight: 900;
+  color: #FBB27C;
+}
+.d4developer_Name:hover {
+  color: #fff;
+  box-shadow: none;
+}
+
+.landing-page {
+  min-height: 100vh;
+  background-color: #674baf;
+  background: linear-gradient(to bottom, #0066FF 0%, #9999FF 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  overflow: auto;
+  padding: 2em 4em;
+}
+.landing-page .container {
+  margin: 5em auto 2em auto;
+  max-width: 1800px;
+}
+.landing-page .container .hero {
+  margin: 2em 0 2em 0;
+  display: flex;
+  gap: 6em;
+}
+.landing-page .container .hero .hero-img {
+  flex-basis: 50%;
+}
+.landing-page .container .hero .hero-img .mockup {
+  width: 100%;
+}
+.landing-page .container .hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-self: center;
+  max-width: 35em;
+}
+.landing-page .container .hero .hero-text .btn {
+  background-color: #fff;
+  color: #674baf;
+  border: 0;
+  width: 40%;
+  padding: 0.5em 1.5em;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.landing-page .container .hero .hero-text .btn:hover {
+  box-shadow: none;
+  transition: 0.4s;
+  transition-delay: 1ms;
+  color: #674baf;
+}
+.landing-page .container .hero .head {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.landing-page .container .hero .text {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.login-page {
+  height: 100vh;
+  padding: 0% 5%;
+  background-color: #F5F5F5;
+}
+.login-page .login-welcome-back {
+  font-weight: 900;
+  text-align: center;
+}
+.login-page p {
+  text-align: center;
+}
+.login-page hr {
+  width: 30%;
+}
+.login-page form {
+  padding: 4% 8%;
+}
+.login-page .login-image {
+  width: 15%;
+}
+
+.signup-page {
+  height: 100vh;
+  padding: 1% 5%;
+  background-color: #F5F5F5;
+}
+.signup-page .login-welcome-back {
+  font-weight: 900;
+  text-align: center;
+}
+.signup-page p {
+  text-align: center;
+}
+.signup-page hr {
+  width: 30%;
+}
+.signup-page form {
+  padding: 8% 8%;
+}
+.signup-page .custom-signup-text {
+  font-size: 3.5rem;
+}
+.signup-page .custom-up {
+  position: relative;
+  bottom: 6rem;
+}
+
+/* For medium screen */
+@media (min-width: 800px) and (max-width: 1200px) {
+  .hero-text {
+    max-width: 30em;
+  }
+}
+/* For smaller screen */
+@media (min-width: 200px) and (max-width: 800px) {
+  .landing-page {
+    min-height: 100vh;
+    background-color: #674baf;
+    background: linear-gradient(to bottom, #0066ff 0%, #9999ff 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    overflow: auto;
+    padding: 0 2em;
+  }
+  .container {
+    margin: 2em 0 1em 0;
+  }
+  .logo {
+    width: 12em;
+  }
+  .hero {
+    flex-direction: column;
+    margin: 3em 0 2em 0;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .btn {
+    margin: 0 auto;
+  }
+  .socials {
+    justify-content: center;
+  }
+}
+/* For medium screen */
+@media (max-width: 1000px) {
+  .signup-page .custom-up {
+    position: relative;
+    bottom: 0rem;
+  }
+}
+@media (max-width: 600px) {
+  .signup-page {
+    padding: 0;
+  }
+  .signup-page .custom-up {
+    margin-top: -50px;
+  }
+  .login-page {
+    padding: 0;
+  }
+}
+/* </---------Media Queries---------> */
+/*
+
+Do not write your code here or on this page
+Instead Use the above mentioned above code instructions
+
+*//*# sourceMappingURL=style.css.map */

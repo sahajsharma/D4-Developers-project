@@ -1,0 +1,107 @@
+#nav-section {
+    .navbar-light {
+        background-color: #0D6EFD !important;
+    }
+    .nav-link {
+        color: #fff !important;
+    }
+    .navbar-brand {
+        margin-left: 9%;
+        color: #fff !important;
+    }
+}
+
+.nav-link {
+    padding-left: 15rem;
+}
+
+#post-card-section {
+    padding: 2% 8% 5% 8%;
+    background-color: #ECF2FF;
+    .card {
+        margin: 5% 4%;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .fa-thumbs-up {
+        color: #0D6EFD;
+        font-size: 1.25rem;
+        cursor: pointer;
+        // margin-left: 40px;
+        position: absolute;
+        right: 5%;
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.2s ease;
+        }
+    }
+}
+
+.blog {
+    padding: 1% 8% 2% 8%;
+    text-align: center;
+    .text-muted {
+        padding-top: 0;
+    }
+    img {
+        height: 500px;
+        width: 500px;
+    }
+    p {
+        padding: 2% 12% 2% 12%;
+    }
+    h2 {
+        padding: 1% 12% 0% 12%;
+    }
+}
+
+.post-head {
+    padding: 3% 5% 0 3%;
+}
+
+.footer {
+    padding: 2%;
+    background-color: #0D6EFD;
+    color: #fff;
+    text-align: center;
+}
+
+.subscribe {
+    padding: 2% 10% 5% 10%;
+    background: linear-gradient(rgba(68, 94, 209, 0.7), rgba(68, 94, 209, 0.7)), url('https://enally.in/live/DANL/images/talk-to-expert-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 300px;
+    background-position: center;
+    color: #fff;
+    .col1sub {
+        padding: 6% 10%;
+        h3 {
+            font-size: 30px;
+            font-weight: 900;
+        }
+        .subbtn {
+            display: flex;
+            justify-content: center;
+            padding: 10% 8%;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    #post-card-section {
+        padding: 2% 4% 4% 4%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #post-card-section {
+        padding: 0px;
+    }
+    .card {
+        margin: 0;
+    }
+    .post-head {
+        padding: 3% 3% 0 8%;
+    }
+}

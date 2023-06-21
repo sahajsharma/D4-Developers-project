@@ -1,0 +1,145 @@
+@import '_components.scss';
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+
+* {
+    margin: 0;
+}
+
+.d4developer_Name {
+    font-size: 30px;
+    font-weight: 500;
+    color: $white;
+    text-decoration: none;
+    span {
+        font-weight: 900;
+        color: $logo_dark_color;
+    }
+    &:hover {
+        color: $white;
+        box-shadow: none;
+    }
+}
+
+.landing-page {
+    min-height: 100vh;
+    background-color: $Violet;
+    background: linear-gradient(to bottom, #0066FF 0%, #9999FF 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    overflow: auto;
+    padding: 2em 4em;
+    .container {
+        margin: 5em auto 2em auto;
+        max-width: 1800px;
+        .hero {
+            margin: 2em 0 2em 0;
+            display: flex;
+            gap: 6em;
+            .hero-img {
+                flex-basis: 50%;
+                .mockup {
+                    width: 100%;
+                }
+            }
+            .hero-text {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                align-self: center;
+                max-width: 35em;
+                .btn {
+                    background-color: $white;
+                    color: $Violet;
+                    border: 0;
+                    width: 40%;
+                    padding: 0.5em 1.5em;
+                    border-radius: 4px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    &:hover {
+                        box-shadow: none;
+                        transition: 0.4s;
+                        transition-delay: 1ms;
+                        color: $Violet;
+                    }
+                }
+            }
+            .head {
+                font-size: 3rem;
+                font-weight: 600;
+                color: $white;
+                font-family: "Poppins", sans-serif;
+            }
+            .text {
+                font-size: 1.3rem;
+                font-weight: 400;
+                color: $white;
+                font-family: "Open Sans", sans-serif;
+            }
+        }
+    }
+}
+
+// login CSS
+.login-page {
+    height: 100vh;
+    padding: 0% 5%;
+    background-color: #F5F5F5;
+    .login-welcome-back {
+        font-weight: 900;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    hr {
+        width: 30%;
+    }
+    form {
+        padding: 4% 8%;
+    }
+    .login-image {
+        width: 15%;
+    }
+}
+
+// Sign Up CSS
+.signup-page {
+    height: 100vh;
+    padding: 1% 5%;
+    background-color: #F5F5F5;
+    .login-welcome-back {
+        font-weight: 900;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    hr {
+        width: 30%;
+    }
+    form {
+        padding: 8% 8%;
+    }
+    .custom-signup-text {
+        font-size: 3.5rem;
+    }
+    .custom-up {
+        position: relative;
+        bottom: 6rem;
+    }
+}

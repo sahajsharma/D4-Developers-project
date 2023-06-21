@@ -1,0 +1,78 @@
+/* For medium screen */
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    $head: 2.5rem;
+    $text: 1.2rem;
+    .hero-text {
+        max-width: 30em;
+    }
+}
+
+
+/* For smaller screen */
+
+@media (min-width: 200px) and (max-width: 800px) {
+    $head: 2rem;
+    $text: 1rem;
+    .landing-page {
+        min-height: 100vh;
+        background-color: $Violet;
+        background: linear-gradient(to bottom, #0066ff 0%, #9999ff 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: top;
+        overflow: auto;
+        padding: 0 2em;
+    }
+    .container {
+        margin: 2em 0 1em 0;
+    }
+    .logo {
+        width: 12em;
+    }
+    .hero {
+        flex-direction: column;
+        margin: 3em 0 2em 0;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .btn {
+        margin: 0 auto;
+    }
+    .socials {
+        justify-content: center;
+    }
+}
+
+
+/* For medium screen */
+
+@media (min-width: 600px) and (max-width: 800px) {
+    $head: 2.5rem;
+    $text: 1.2rem;
+}
+
+@media (max-width: 1000px) {
+    .signup-page {
+        .custom-up {
+            position: relative;
+            bottom: 0rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .signup-page {
+        padding: 0;
+        .custom-up {
+            margin-top: -50px;
+        }
+    }
+    .login-page {
+        padding: 0;
+    }
+}
+
+
+/* </---------Media Queries---------> */
